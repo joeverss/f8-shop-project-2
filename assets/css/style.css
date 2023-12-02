@@ -19,7 +19,6 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-left: 70px;
     width: 144px;
     height: 50px;
     background-color: #171100;
@@ -33,6 +32,7 @@ a {
     margin-right: auto;
 }
 .header{
+    background: #FFFCF4;
     margin-top: 44px;
     
 }
@@ -59,6 +59,9 @@ line-height: 1.75; /* 175% */
 .nav-bar .btn a{
     color: #fff;
 }
+.nav-bar .btn{
+    margin-left: 70px;
+}
 .nav-bar .active{
   display: flex ;
 justify-content: center;
@@ -81,24 +84,28 @@ justify-content: center;
 /* hero */
 .hero{
    margin-top: 64px;
+   background: #FFFCF4;
 }
 .hero .content {
     display: flex;
 }
 .hero .img-hero{
     position: relative;
-    width: 50%;
+    width: 48%;
+    padding-bottom: 65px;
 }
+
 .hero .content-hero{
     margin-left: 130px;
-    width: 50%;
+    padding-bottom:128px ;
+    width: 52%;
 }
 .hero .img-child{
     background-color: #fff;
     position: absolute;
     border-radius: 12px;
-    bottom: -72px;
-    right: -35px;
+    bottom: 48px;
+    right: 0;
     width: 270px;
     height: 244px;
 }
@@ -109,9 +116,17 @@ justify-content: center;
 }
 .hero .img-child .cover-img-child{
     display: flex;
-}
-.hero .img-child .content-img-child{
     margin-left: 16px;
+}
+.hero .img-child .circle-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 48px;
+height: 48px;
+border-radius: 50%;
+background: #FCEFFF;
+box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
 }
 .content-img-child .desc{
 color: #5F5B53;
@@ -127,7 +142,7 @@ font-family: Poppins;
 font-size: 1.8rem;
 font-style: normal;
 font-weight: 600;
-line-height: 1.67; /* 166.667% */
+line-height: 1.3; /* 166.667% */
 }
 /* .content-hero */
 .content-hero {
@@ -154,6 +169,39 @@ line-height: 1.67; /* 166.667% */
 }
 .content-hero .see-more{
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+.content-hero .rate-students{
+    margin-top: 48px;
+}
+.content-hero .rate-students .desc{
+color: #5F5B53;
+font-family: Poppins;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.67; /* 166.667% */
+}
+ .desc-second{
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.content-hero .rate-students .title-text{
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.23; /* 122.727% */
+}
+.content-hero .rate-students .cover-desc{
+    margin-top: 8px;
+    display: flex;
+}
+.content-hero .rate-students .cover-desc :nth-child(2){
+    margin-left: 26px;
 }
