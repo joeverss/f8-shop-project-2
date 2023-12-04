@@ -1,4 +1,5 @@
 html{
+    font-family: 'Sen', sans-serif;
     font-size: 62.5%;
     height: 2000px;
 }
@@ -14,6 +15,19 @@ h1{font-size: 1.8rem;}
 a {
     text-decoration: none;
 }
+.title{
+    color: #171100;
+    font-family: Sen;
+    letter-spacing: -0.76px;}
+
+   .title.lv-1{ 
+        font-weight: 700;
+        font-size: 3.8rem;
+    }
+   .title.lv-{
+    font-size: 5.8rem;
+    font-weight: 600; }
+    
 .btn{
     display: flex;
     flex-direction: column;
@@ -33,6 +47,13 @@ a {
 .header{
     margin-top: 44px;
     
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 6px 8px;
+    background-color: #fff;
 }
 .header .nav-bar{
     display: flex;
@@ -64,8 +85,7 @@ line-height: 1.75; /* 175% */
   display: flex ;
 justify-content: center;
 }
-.nav-bar a:hover,
-.nav-bar .active a{
+.nav-bar a:hover:not(.btn a ){
     color: #171100;
     text-shadow: 1px 0 0 currentColor;
 }
@@ -226,3 +246,62 @@ line-height: 1.23; /* 122.727% */
 .content-hero .stats strong:nth-child(2){
     margin-left: 28px;
 }
+/* ..........popular....... */
+
+.popular{
+    margin-top: 200px;
+}
+
+ .title{
+color: #171100;
+font-family: Sen;
+line-height: 1.26; /* 126.316% */
+letter-spacing: -0.76px;}
+
+.popular .title .desc{
+color: #5F5B53;
+font-family: Poppins;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1,67   ; /* 166.667% */
+}
+.popular .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular .arrow-info .desc{
+margin-top: 16px;
+color: #5F5B53;
+font-family: Poppins;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.67   ; /* 166.667% */
+}
+.popular .info .btn-icon{
+    width: 40px;
+    color:#FFB900;
+    height: 40px;
+    border: 1px solid #5F5B53;
+    border-radius: 50%;
+    background-color: #fff; 
+    flex-shrink: 0;
+}
+.row-icon button:first-child{
+    margin-right: 16px;
+}
+.popular .info .btn-icon:hover{
+    background-color: #FFB900;
+    color: #fff;
+}
+.popular .info .btn-icon:nth-child(2){
+    transform: rotate(3.142rad);
+}
+.popular .info .row-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
