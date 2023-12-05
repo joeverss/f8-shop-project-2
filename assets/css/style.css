@@ -15,6 +15,12 @@ h1{font-size: 1.8rem;}
 a {
     text-decoration: none;
 }
+.line-clamp{
+    display:-webkit-box;
+    -webkit-line-clamp: var( --line-clamp,1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .title{
     color: #171100;
     font-family: Sen;
@@ -27,6 +33,13 @@ a {
    .title.lv-{
     font-size: 5.8rem;
     font-weight: 600; }
+
+    .title.lv-3{
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    }
     
 .btn{
     display: flex;
@@ -87,7 +100,7 @@ justify-content: center;
 }
 .nav-bar a:hover:not(.btn a ){
     color: #171100;
-    text-shadow: 1px 0 0 currentColor;
+    text-shadow: 1px 0 0 currentColor; 
 }
 .nav-bar .active a::after{
     position: relative;
@@ -249,7 +262,8 @@ line-height: 1.23; /* 122.727% */
 /* ..........popular....... */
 
 .popular{
-    margin-top: 200px;
+    margin-top: 180px;
+    padding: 20px 0;
 }
 
  .title{
@@ -272,6 +286,7 @@ line-height: 1,67   ; /* 166.667% */
     align-items: center;
 }
 .popular .arrow-info .desc{
+width: 458px;
 margin-top: 16px;
 color: #5F5B53;
 font-family: Poppins;
@@ -305,3 +320,173 @@ line-height: 1.67   ; /* 166.667% */
     align-items: center;
 }
 
+/* ....img-popular....... */
+.img-popular{
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
+.img-popular .img-child{
+   
+    flex: 1;
+}
+.img-popular .img-child .child{
+    border-radius: 12px 12px 0px 0px;
+    width: 370px;
+    object-fit: cover;
+    height: 278px;
+
+}
+
+.img-popular .cover .desc{
+    margin-top: 6px;
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.88; /* 185.714% */
+}
+.img-popular .cover{
+    display: flex;
+    align-items: center;
+    
+}
+.img-popular .cover .icon, .cover .btn {
+    margin-left: auto;
+}
+.img-popular .img-child .arrow{
+    padding: 0 22px;
+    margin-top: 16px;
+}
+.img-popular .cover .strong{
+color: #171100;
+font-family: Poppins;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 600;
+line-height:1.67;
+} 
+.img-popular .cover .btn-yellow{
+color: #fff;
+border-radius: 25px;
+background: #FFB900;
+}
+.img-popular .cover .btn{
+    color: #fff;
+}
+.img-popular .img-child .arrow .cover-1{
+    margin-top: 12px;
+}
+
+/* remind....... */
+.remind{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: #2E2100;
+}
+.remind .cover {
+    display: flex;
+    padding:96px 135px;
+    align-items: center;
+}
+.remind .cover .bold{
+ margin-top: 18px;
+color: #F7F7F7;
+font-family: Sen;
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.42; /* 141.667% */
+}
+.remind .cover .desc{
+color: #BFBCB2;
+font-family: Poppins;
+font-size: 1.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.86; /* 185.714% */
+}
+.remind .cover .remind-content{
+    width: 740px;
+    position: relative;
+    margin-left: 270px;
+}
+
+.remind .cover .remind-content .desc-italic{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    min-height: 160px;
+    line-height: 1.54; /* 153.846% */
+}
+.remind .cover .img-position{
+    position: absolute;
+    top: -25px;
+    left: -30px;
+}
+
+/* disscusion */
+.disscusion{
+    margin-top: 200px;
+}
+.disscusion .img-content .img-first{
+    border-radius: 16px;
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+}
+.disscusion .img-content .img-first:first-child{
+   
+    padding-top:20px;
+    border-radius: 16px;
+    background-color: yellow;
+     margin-top: 20px;
+
+}
+.cover-img-discussion{
+
+display: flex;
+}
+.cover-img-discussion .img-content{
+    width: 50%;
+    border-radius: 16px;
+}
+.cover-img-discussion .info{
+    width: 50%;
+    padding:58px 0 58px 65px;
+}
+.cover-img-discussion .info .title{
+width: 470px;
+color: #171100;
+font-family: Sen;
+font-size: 3.8rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.26; /* 126.316% */
+letter-spacing: -0.76px;
+}
+.cover-img-discussion .info .desc{
+width: 458px;
+--line-clamp:2;
+color: #5F5B53;
+font-family: Poppins;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.75; /* 175% */
+}
+.cover-img-discussion .info .desc:nth-child(2){
+    margin-top: 16px;
+}
+.cover-img-discussion .info .btn{
+    margin-top: 32px;
+    background-color: #FFB900;
+    width: 137px;
+    color:#fff;
+}
