@@ -14,6 +14,13 @@ h1{font-size: 1.8rem;}
 a {
     text-decoration: none;
 }
+.hr{
+    margin-top: 12px;
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #E2DFDA;
+   }
 .line-clamp{
     display:-webkit-box;
     -webkit-line-clamp: var( --line-clamp,1);
@@ -491,7 +498,7 @@ line-height: 1.75; /* 175% */
 /* /feature-2   */
 
 .feature-2{
-    padding: 200px 0 200px 0;
+    padding: 200px 0 0px 0;
 }
 .feature-2 .cover{
     display: flex;  
@@ -526,8 +533,8 @@ line-height: 1.75; /* 175% */
 /* ourblog */
 
 .ourblog{
-    margin-top: 135px;
-    padding:96px 0;
+    margin-top: 200px;
+    padding:86px 0;
     background-color: #FFFCF4;
 }
 .ourblog .block-top{
@@ -535,7 +542,7 @@ line-height: 1.75; /* 175% */
 }
 .ourblog .block-top .desc{
     margin: 16px auto auto;
-    width: 448px;
+    width: 371px;
 color: #696262;
 text-align: center;
 font-family: Poppins;
@@ -637,3 +644,79 @@ line-height: 1.75; /* 175% */
     background-color: yellow;
     cursor: default;
    }
+   footer{
+    background: #2E2100;
+   }
+   footer .list{
+    border-bottom: solid 1px #59554B;
+    padding: 96px 0 28px 0;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    }
+    
+    footer .list .title{
+    color: #FFF;
+    font-family: Sen;
+    font-size:1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.42; /* 141.667% */
+    }
+    footer .list .title-big{
+        font-size: 2.4rem;
+    }
+    footer .list .desc{
+    color: #BFBCB2;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.87; /* 185.714% */
+    }   
+    footer .list .limit-desc{
+        width: 213px;
+        margin: 18px 0;
+    }
+    footer .list .list-item .hr{
+        margin: 12px 0 28px;
+        background: #59554B;
+    }
+    footer .list .social{
+        display: flex;
+        gap: 15px;
+    }
+    footer .list .list-item .bold-capitalize{
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.87; /* 185.714% */
+    }
+    #private{width: 231px;
+        
+    }
+    footer .list .list-item .cover{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+    footer .list .list-item p{
+        margin: 6px 0 6px;
+    }.hr-end{
+        width: 1170px;
+        background-color: #59554B;
+    }.end .desc{
+        margin-top: 28px;
+        color: #807D74;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.86; /* 185.714% */
+    }
+    .end{
+        margin-top: 38px;
+    }
